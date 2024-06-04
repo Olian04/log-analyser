@@ -1,13 +1,26 @@
-# log-analyser
+# log_analyser
 
-A terminal program that accepts lines of json on stdin and produces an analysis of those json objects.
+[![Package Version](https://img.shields.io/hexpm/v/log_analyser)](https://hex.pm/packages/log_analyser)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/log_analyser/)
 
 ```sh
-cat file.txt | log-analyzer --interactive
+gleam add log_analyser
 ```
 
-By default the program will start off by rendering a TUI that displays the current internal model of the stream of logs. This is does while its reading from stdin and updating its internal model. At a fixed interval the TUI will be updated to reflect the internal model. Once all rows from stdin have been read, the 
+```gleam
+import log_analyser
 
-Flags:
+pub fn main() {
+  // TODO: An example of the project in use
+}
+```
 
-* `--interactive` disable the TUI
+Further documentation can be found at <https://hexdocs.pm/log_analyser>.
+
+## Development
+
+```sh
+gleam run   # Run the project
+gleam test  # Run the tests
+gleam shell # Run an Erlang shell
+```
